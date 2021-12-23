@@ -10,4 +10,5 @@ ins telegram-desktop
 ins ranger
 ins neovim
 ins firefox
+ins ubuntu-restricted-extras
 # sudo apt update
