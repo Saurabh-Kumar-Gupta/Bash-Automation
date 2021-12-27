@@ -12,3 +12,5 @@ ins neovim
 ins firefox
 ins ubuntu-restricted-extras
 # sudo apt update
+
+echo 'figlet shoo' >> ~/.bashrc
