@@ -1,16 +1,14 @@
 echo " This script is purely expiermental, run it at your own risk "
 read -p "Press any key to continue . . ."; echo
-ins() {
-    sudo apt install $1
-    echo " $1 installed Succesfully"
+ins(){
+    for program in ${list[@]}; do
+        sudo apt install $program -y
+        echo "$program installed succcesfully"
+    done    
 }
+list=(vlc telegram-desktop ranger neovim firefox figlet ubuntu-restricted-extras gnome-tweaks gparted htop neofetch qbittorrent mpv ifconfig stacer)
+ins list
+sudo apt update && upgrade -y
 
-ins vlc
-ins telegram-desktop
-ins ranger
-ins neovim
-ins firefox
-ins ubuntu-restricted-extras
-# sudo apt update
-
-echo 'figlet shoo' >> ~/.bashrc
+ 
+#echo 'figlet shoo' >> ~/.bashrc
