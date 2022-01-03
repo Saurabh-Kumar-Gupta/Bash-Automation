@@ -8,7 +8,7 @@ ins(){
 }
 list=(vlc telegram-desktop ranger neovim firefox figlet ubuntu-restricted-extras gnome-tweaks gparted htop neofetch qbittorrent mpv ifconfig stacer)
 ins list
-sudo apt update && upgrade -y
+sudo apt update && sudo apt upgrade -y
 
  
 #echo 'figlet shoo' >> ~/.bashrc
