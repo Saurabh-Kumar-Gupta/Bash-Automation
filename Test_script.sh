@@ -1,6 +1,7 @@
 echo " This script is purely expiermental, run it at your own risk "
 read -p "Press any key to continue . . ."; echo
 ins(){
+     for program in ${list[@]}; do
          sudo apt install $program -y
          echo "$program installed succcesfully"
      done    
