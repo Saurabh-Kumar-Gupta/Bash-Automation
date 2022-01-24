@@ -5,7 +5,7 @@ ins(){
     echo "$1 installed succcesfully"    
  }
 
-declare -a list=(vlc telegram-desktop ranger neovim firefox figlet ubuntu-restricted-extras gnome-tweaks gparted htop neofetch qbittorrent mpv stacer)
+declare -a list=(vlc telegram-desktop ranger neovim firefox figlet ubuntu-restricted-extras gnome-tweaks gparted htop neofetch qbittorrent mpv stacer lolcat batcat lsd)
 l=${#list[@]}
 for((i=0;i<$[l]; i++));
 do
