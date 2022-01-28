@@ -28,5 +28,19 @@ else
     echo "No Value Found";
 fi
 
- 
-#echo 'figlet shoo' >> ~/.bashrc
+# ---------------------------aliashes------------------------------------------
+
+echo "# user edited effects" >> ~/.bashrc
+echo "figlet capta1n_Saurabh | lolcat" >> ~/.bashrc
+echo "neofetch --ascii_distro Dragonfly" >> ~/.bashrc
+
+echo "#aliases of package manager" >> ~/.bashrc
+echo "alias aptup='sudo apt update'" >> ~/.bashrc
+echo "'alias aptud='sudo apt upgrade'" >> ~/.bashrc
+echo "alias aptu='sudo apt update && sudo apt upgrade -y'" >> ~/.bashrc
+
+echo "'#alias" >> ~/.bashrc
+echo "'alias cat='batcat'" >> ~/.bashrc
+alias "ls='lsd'" >> ~/.bashrc
+alias "sbrc='source ~/.bashrc'" >> ~/.bashrc
+alias "nbrc='sudo nvim ~/.bashrc'" >> ~/.bashrc
