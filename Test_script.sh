@@ -17,18 +17,25 @@ for((i=0;i<$[l]; i++));
 do
    ins ${list[$i]}
 done   
-echo " if you want to install any other software please enter 0 otherwise enter 1"
-DEFAULT=0
-read INPUT
-if [ "$INPUT" -eq "$DEFAULT" ]
-then
-     read INPUT2	
-     ins $INPUT2;
-else
-    echo "No Value Found";
-fi
 
-# ---------------------------aliashes------------------------------------------
+
+
+for (( i=0; i<1000; i++ ));
+do
+   echo " if you want to install any other software please enter 0 otherwise enter 1" 
+   DEFAULT=0
+   read INPUT
+   if [ "$INPUT" -eq "$DEFAULT" ]
+    then
+      read INPUT2	
+      ins $INPUT2;
+   else
+      echo "Alrighty love bye bye";
+      break
+   fi
+done
+
+# ---------------------------aliashes and effects------------------------------------------
 
 echo "# user edited effects" >> ~/.bashrc
 echo "figlet capta1n_Saurabh | lolcat" >> ~/.bashrc
@@ -41,6 +48,6 @@ echo "alias aptu='sudo apt update && sudo apt upgrade -y'" >> ~/.bashrc
 
 echo "'#alias" >> ~/.bashrc
 echo "'alias cat='batcat'" >> ~/.bashrc
-alias "ls='lsd'" >> ~/.bashrc
-alias "sbrc='source ~/.bashrc'" >> ~/.bashrc
-alias "nbrc='sudo nvim ~/.bashrc'" >> ~/.bashrc
+echo "alias ls='lsd'"  >> ~/.bashrc
+echo "alias sbrc='source ~/.bashrc'"  >> ~/.bashrc
+echo "alias nbrc='sudo nvim ~/.bashrc'"  >> ~/.bashrc
