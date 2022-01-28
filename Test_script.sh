@@ -1,11 +1,17 @@
 echo " This script is purely expiermental, run it at your own risk "
 read -p "Press any key to continue . . ."; echo
 ins(){
+    apt-cache search $1|grep "^$1 "
+    if [ $? -eq 0 ] 
+    then 
     sudo apt install $1 -y
-    echo "$1 installed succcesfully"    
+    echo "$1 installed succcesfully"
+    else 
+    echo "$1 Not found in apt repositories"
+    fi     
  }
 
-declare -a list=(vlc telegram-desktop ranger neovim firefox figlet ubuntu-restricted-extras gnome-tweaks gparted htop neofetch qbittorrent mpv stacer lolcat batcat lsd)
+declare -a list=(vlc telegram-desktop ranger neovim firefox figlet ubuntu-restricted-extras gnome-tweaks gparted htop neofetch qbittorrent mpv stacer lolcat)
 l=${#list[@]}
 for((i=0;i<$[l]; i++));
 do
