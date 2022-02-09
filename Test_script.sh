@@ -11,6 +11,7 @@ ins(){
     fi     
  }
 
+# installing some important programs that i need.
 declare -a list=(vlc telegram-desktop ranger neovim firefox figlet ubuntu-restricted-extras gnome-tweaks gparted htop neofetch qbittorrent mpv stacer lolcat xterm)
 l=${#list[@]}
 for((i=0;i<$[l]; i++));
@@ -19,7 +20,7 @@ do
 done   
 
 
-
+# additional program installation script.
 for (( i=0; i<1000; i++ ));
 do
    echo " if you want to install any other software please enter 0 otherwise enter 1" 
@@ -35,9 +36,19 @@ do
    fi
 done
 
-wget -O /tmp/wallpaper.jpg "http://www.bing.com/$(wget -q -O- https://binged.it/2ZButYc | sed -e 's/<[^>]*>//g' | cut -d / -f2 | cut -d \& -f1)"
-gsettings set org.gnome.desktop.background picture-uri file:////tmp/wallpaper.jpg
-
+#changig the wallpaper
+echo " Do you have a wallpaper directory(0) or not (1) "
+DEFAULT=0
+read INPUT3
+if [ "$INPUT3" -eq "$DEFAULT" ]
+  then
+     read INPUT3
+     wget -O /tmp/wallpaper.jpg "http://www.bing.com/$(wget -q -O- https://binged.it/2ZButYc | sed -e 's/<[^>]*>//g' | cut -d / -f2 | cut -d \& -f1)"
+     gsettings set org.gnome.desktop.background picture-uri file:///$INPUT3
+else
+    wget -O /tmp/wallpaper.jpg "http://www.bing.com/$(wget -q -O- https://binged.it/2ZButYc | sed -e 's/<[^>]*>//g' | cut -d / -f2 | cut -d \& -f1)"
+    gsettings set org.gnome.desktop.background picture-uri file:////tmp/wallpaper.jpg
+fi  
 
 # ---------------------------aliashes and effects------------------------------------------
 
