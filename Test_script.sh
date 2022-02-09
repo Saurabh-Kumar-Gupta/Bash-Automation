@@ -11,7 +11,7 @@ ins(){
     fi     
  }
 
-declare -a list=(vlc telegram-desktop ranger neovim firefox figlet ubuntu-restricted-extras gnome-tweaks gparted htop neofetch qbittorrent mpv stacer lolcat)
+declare -a list=(vlc telegram-desktop ranger neovim firefox figlet ubuntu-restricted-extras gnome-tweaks gparted htop neofetch qbittorrent mpv stacer lolcat xterm)
 l=${#list[@]}
 for((i=0;i<$[l]; i++));
 do
@@ -41,17 +41,17 @@ gsettings set org.gnome.desktop.background picture-uri file:////tmp/wallpaper.jp
 
 # ---------------------------aliashes and effects------------------------------------------
 
-echo "# user edited effects" >> ~/.bashrc
-echo "figlet capta1n_Saurabh | lolcat" >> ~/.bashrc
-echo "neofetch --ascii_distro Dragonfly" >> ~/.bashrc
+# echo "# user edited effects" >> ~/.bashrc
+# echo "figlet capta1n_Saurabh | lolcat" >> ~/.bashrc
+# echo "neofetch --ascii_distro Dragonfly" >> ~/.bashrc
 
-echo "#aliases of package manager" >> ~/.bashrc
-echo "alias aptup='sudo apt update'" >> ~/.bashrc
-echo "'alias aptud='sudo apt upgrade'" >> ~/.bashrc
-echo "alias aptu='sudo apt update && sudo apt upgrade -y'" >> ~/.bashrc
+# echo "#aliases of package manager" >> ~/.bashrc
+# echo "alias aptup='sudo apt update'" >> ~/.bashrc
+# echo "'alias aptud='sudo apt upgrade'" >> ~/.bashrc
+# echo "alias aptu='sudo apt update && sudo apt upgrade -y'" >> ~/.bashrc
 
-echo "'#alias" >> ~/.bashrc
-echo "'alias cat='batcat'" >> ~/.bashrc
-echo "alias ls='lsd'"  >> ~/.bashrc
-echo "alias sbrc='source ~/.bashrc'"  >> ~/.bashrc
-echo "alias nbrc='sudo nvim ~/.bashrc'"  >> ~/.bashrc
+# echo "'#alias" >> ~/.bashrc
+# echo "'alias cat='batcat'" >> ~/.bashrc
+# echo "alias ls='lsd'"  >> ~/.bashrc
+# echo "alias sbrc='source ~/.bashrc'"  >> ~/.bashrc
+# echo "alias nbrc='sudo nvim ~/.bashrc'"  >> ~/.bashrc
