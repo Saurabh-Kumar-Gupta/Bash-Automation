@@ -50,6 +50,7 @@ else
     gsettings set org.gnome.desktop.background picture-uri file:////tmp/wallpaper.jpg
 fi  
 
+
 # ---------------------------aliashes and effects------------------------------------------
 
 # echo "# user edited effects" >> ~/.bashrc
