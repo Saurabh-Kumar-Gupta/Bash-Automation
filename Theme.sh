@@ -41,6 +41,7 @@
 # mv Graphite-dark ~/.themes
 
 #Graphite Theme -3 
-wget 
-
+# wget https://github.com/Saurabh-Kumar-Gupta/Bash-Automation/raw/main/Themes/Graphite-light-nord.tar.xz
+# tar -xvf Graphite-light-nord.tar.xz
+# mv Graphite-light-nord ~/.themes
 
