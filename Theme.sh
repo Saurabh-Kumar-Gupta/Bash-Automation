@@ -31,6 +31,16 @@
 
 
 #Graphite theme -1
-wget https://github.com/Saurabh-Kumar-Gupta/Bash-Automation/raw/main/Themes/Graphite-dark-nord.tar.xz
-tar -xvf Graphite-dark-nord.tar.xz
-mv Graphite-dark-nord ~/.themes
+# wget https://github.com/Saurabh-Kumar-Gupta/Bash-Automation/raw/main/Themes/Graphite-dark-nord.tar.xz
+# tar -xvf Graphite-dark-nord.tar.xz
+# mv Graphite-dark-nord ~/.themes
+
+#Graphics theme -2
+# wget https://github.com/Saurabh-Kumar-Gupta/Bash-Automation/raw/main/Themes/Graphite-dark.tar.xz
+# tar -xvf Graphite-dark.tar.xz
+# mv Graphite-dark ~/.themes
+
+#Graphite Theme -3 
+wget 
+
+
