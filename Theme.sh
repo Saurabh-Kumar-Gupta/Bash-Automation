@@ -31,6 +31,6 @@
 
 
 #Graphite theme -1
-wget https://github.com/Saurabh-Kumar-Gupta/Bash-Automation/raw/main/Themes/Nordic-darker-v40.tar.xz
-tar -xvf Nordic-darker-v40.tar.xz
-mv Nordic-darker-v40 ~/.themes
+wget https://github.com/Saurabh-Kumar-Gupta/Bash-Automation/raw/main/Themes/Graphite-dark-nord.tar.xz
+tar -xvf Graphite-dark-nord.tar.xz
+mv Graphite-dark-nord ~/.themes
