@@ -1,3 +1,4 @@
+#!/bin/bash
 echo " This script is purely expiermental, run it at your own risk "
 read -p "Press any key to continue . . ."; echo
 ins(){
@@ -12,7 +13,7 @@ ins(){
  }
 
 # installing some important programs that i need.
-declare -a list=(vlc telegram-desktop ranger neovim firefox figlet ubuntu-restricted-extras gnome-tweaks gparted htop neofetch qbittorrent mpv stacer lolcat xterm)
+declare -a list=(vlc telegram-desktop ranger neovim firefox figlet ubuntu-restricted-extras gnome-tweaks gparted htop neofetch qbittorrent mpv stacer lolcat xterm unzip)
 l=${#list[@]}
 for((i=0;i<$[l]; i++));
 do
@@ -49,7 +50,6 @@ else
     wget -O /tmp/wallpaper.jpg "http://www.bing.com/$(wget -q -O- https://binged.it/2ZButYc | sed -e 's/<[^>]*>//g' | cut -d / -f2 | cut -d \& -f1)"
     gsettings set org.gnome.desktop.background picture-uri file:////tmp/wallpaper.jpg
 fi  
-
 
 # ---------------------------aliashes and effects------------------------------------------
 
