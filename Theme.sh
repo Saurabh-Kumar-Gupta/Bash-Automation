@@ -48,6 +48,14 @@
 
 
 # WhiteSur[MAC] Theme 
-wget 
+wget https://github.com/Saurabh-Kumar-Gupta/Bash-Automation/raw/main/Themes/WhiteSur-dark.tar.xz
 tar -xvf WhiteSur-dark.tar.xz
 mv WhiteSur-dark ~/.themes
+
+# WhiteSur[MAC] Theme 
+wget https://github.com/Saurabh-Kumar-Gupta/Bash-Automation/raw/main/Themes/WhiteSur-light.tar.xz
+tar -xvf WhiteSur-light.tar.xz
+mv WhiteSur-light ~/.themes
+rm -rf WhiteSur-light.tar.xz
+#Icons
+
