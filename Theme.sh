@@ -45,3 +45,9 @@
 # tar -xvf Graphite-light-nord.tar.xz
 # mv Graphite-light-nord ~/.themes
 
+
+
+# WhiteSur[MAC] Theme 
+wget 
+tar -xvf WhiteSur-dark.tar.xz
+mv WhiteSur-dark ~/.themes
