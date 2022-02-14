@@ -47,15 +47,34 @@
 
 
 
-# WhiteSur[MAC] Theme 
-wget https://github.com/Saurabh-Kumar-Gupta/Bash-Automation/raw/main/Themes/WhiteSur-dark.tar.xz
-tar -xvf WhiteSur-dark.tar.xz
-mv WhiteSur-dark ~/.themes
+# # WhiteSur[MAC] Theme 
+# wget https://github.com/Saurabh-Kumar-Gupta/Bash-Automation/raw/main/Themes/WhiteSur-dark.tar.xz
+# tar -xvf WhiteSur-dark.tar.xz
+# mv WhiteSur-dark ~/.themes
 
-# WhiteSur[MAC] Theme 
-wget https://github.com/Saurabh-Kumar-Gupta/Bash-Automation/raw/main/Themes/WhiteSur-light.tar.xz
-tar -xvf WhiteSur-light.tar.xz
-mv WhiteSur-light ~/.themes
-rm -rf WhiteSur-light.tar.xz
-#Icons
+# # WhiteSur[MAC] Theme 
+# wget https://github.com/Saurabh-Kumar-Gupta/Bash-Automation/raw/main/Themes/WhiteSur-light.tar.xz
+# tar -xvf WhiteSur-light.tar.xz
+# mv WhiteSur-light ~/.themes
+# rm -rf WhiteSur-light.tar.xz
+# #Icons
+# wget https://github.com/Saurabh-Kumar-Gupta/Bash-Automation/raw/main/Icons/WhiteSur-red.tar.xz
+# tar -xvf WhiteSur-red.tar.xz
+# mv WhiteSur-red ~/.icons
+# rm -rf WhiteSur-red.tar.xz
+
+
+
+
+# # Layan Dark Theme 
+# wget https://github.com/Saurabh-Kumar-Gupta/Bash-Automation/raw/main/Themes/Layan-dark.tar.xz
+# tar -xvf Layan-dark.tar.xz
+# mv Layan-dark ~/.themes
+# rm -rf Layan-dark.tar.xz
+
+# # Layan Light Theme
+# wget https://github.com/Saurabh-Kumar-Gupta/Bash-Automation/raw/main/Themes/Layan-light.tar.xz
+# tar -xvf Layan-light.tar.xz
+# mv Layan-light ~/.themes
+# rm -rf Layan-light.tar.xz
 
