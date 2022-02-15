@@ -1,4 +1,16 @@
 #!/bin/bash
+
+
+ins_theme() {
+    wget $1
+    name=$(echo "$1"|awk -F/ '{print $NF}')
+    tar -xvf $name
+    fname=$(echo "$name"|awk -F. '{print $1}')
+    echo $fname
+    mv $fname ~/.themes
+    rm -rf $name
+}
+
 # wget https://github.com/dracula/gtk/archive/master.zip
 # unzip -o master.zip -d ~/.themes
 
@@ -78,3 +90,5 @@
 # mv Layan-light ~/.themes
 # rm -rf Layan-light.tar.xz
 
+link=https://github.com/Saurabh-Kumar-Gupta/Bash-Automation/raw/main/Themes/Layan-light.tar.xz
+ins_theme $link
