@@ -6,7 +6,6 @@ ins_theme() {
     name=$(echo "$1"|awk -F/ '{print $NF}')
     tar -xvf $name
     fname=$(echo "$name"|awk -F. '{print $1}')
-    echo $fname
     mv $fname ~/.themes
     rm -rf $name
 }
