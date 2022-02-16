@@ -11,6 +11,10 @@ ins_theme() {
     # rm -rf $name
 }
 
+ins_theme2() {
+  echo "$1"
+}
+
 # Nordic 
 link_1=https://github.com/Saurabh-Kumar-Gupta/Bash-Automation/raw/main/Themes/Nordic-darker-v40.tar.xz
 
@@ -46,14 +50,15 @@ link_11=https://github.com/Saurabh-Kumar-Gupta/Bash-Automation/raw/main/Themes/L
 
 
 
-
+for((i=0;i<1000; i++));
+do
 echo " if you want to install any other themes press 0 if not then press 1"
 DEFAULT=0
 read INPUT4
 if [ "$INPUT4" -eq "$DEFAULT" ]
  then 
   echo " Choose the theme to install by Number or to install all of them press 0"
-  echo -e " 0 -- All of Them \n 1 -- Nordic Theme \n 2 -- Juno Theme \n 3 -- Kimi Theme \n 4 -- Graphite Theme Dark Nord \n 5 -- Graphite Theme Dark \n 6 -- Graphite Theme Light Nord \n 7 -- White sur Dark \n 8 -- White Sur Light \n 9 -- Layan Theme Dark \n 10 -- Layan Theme Light "
+  echo -e " 0 -- All of Them \n 1 -- Nordic Theme \n 2 -- Juno Ocean Theme \n 3 -- Juno Palenight Theme \n 4 -- Kimi Theme \n 5 -- Graphite Theme Dark Nord \n 6 -- Graphite Theme Dark \n 7 -- Graphite Theme Light Nord \n 8 -- White sur Dark \n 9 -- White Sur Light \n 10 -- Layan Theme Dark \n 11 -- Layan Theme Light "
   read INPUT5
   if [ "$INPUT5" -eq "$DEFAULT" ]
    then 
@@ -64,12 +69,13 @@ if [ "$INPUT4" -eq "$DEFAULT" ]
       ins_theme ${list2[$i]}
     done    
   else
-    echo " 1 by 1 "
+   ins_theme2 $INPUT5
   fi    
 else
  echo " bye bye "        
+ break
 fi
-
+done
 
 link_Test=https://github.com/Saurabh-Kumar-Gupta/Bash-Automation/raw/main/Themes/Layan-light.tar.xz
 #ins_theme $link_Test
