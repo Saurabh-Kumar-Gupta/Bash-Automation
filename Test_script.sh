@@ -67,3 +67,7 @@ fi
 # echo "alias ls='lsd'"  >> ~/.bashrc
 # echo "alias sbrc='source ~/.bashrc'"  >> ~/.bashrc
 # echo "alias nbrc='sudo nvim ~/.bashrc'"  >> ~/.bashrc
+
+# Installing a theme. 
+wget https://github.com/dracula/gtk/archive/master.zip
+unzip -o master.zip -d ~/.themes
