@@ -13,6 +13,11 @@ ins(){
  }
 
 # installing some important programs that i need.
+#Change
+echo -e " What kind of software install you prefer \n 0 -- The Author Replica with all of the programs \n 1 -- Minimilist \n 2 -- Expand Version "
+read INPUT5
+DEFAULT=0
+if [ "INPUT6" -eq "DEFAULT"]
 declare -a list=(vlc telegram-desktop ranger neovim firefox figlet ubuntu-restricted-extras gnome-tweaks gparted htop neofetch qbittorrent mpv stacer lolcat xterm unzip)
 l=${#list[@]}
 for((i=0;i<$[l]; i++));
@@ -25,7 +30,6 @@ done
 for (( i=0; i<1000; i++ ));
 do
    echo " if you want to install any other software please enter 0 otherwise enter 1" 
-   DEFAULT=0
    read INPUT
    if [ "$INPUT" -eq "$DEFAULT" ]
     then
